@@ -95,8 +95,8 @@ class opdsFeed(Atom1Feed):
         handler.addQuickElement("title", item['title'])
         handler.characters("\n")
         if not disable_item_links:
-            handler.addQuickElement("link", "", {"href": item['link'], "rel": "alternate"})
-            handler.characters("\n")
+            # handler.addQuickElement("link", "", {"href": item['link'], "rel": "alternate"})
+            # handler.characters("\n")
         # Enclosures.
         if not disable_item_links:
             if item.get('enclosures') is not None:
